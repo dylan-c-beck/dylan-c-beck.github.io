@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Graduate Student Algebra Seminar | Department of Mathematics | University of Kansas</title>
+<link rel="stylesheet" href="mystyle.css">
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<style>
+table, th, td {
+  border:1px solid blue; text-align:left
+}
+</style>
+<body>
+<div class="header">
+	<h1 align=center>
+	Graduate Student Algebra Seminar
+	<h3 align=center>
+	<a href="https://en.wikipedia.org/wiki/Structure_theorem_for_finitely_generated_modules_over_a_principal_ideal_domain"> <img src="https://i.imgur.com/nIzHz1U.jpg" 	alt="Whoops! The Hilbert-Poincaré series should appear here!" border="0" style="width:314px; height:33px;"></a>
+</h3></h1>
+&nbsp;
+<p>3 February:</p>
+
+Homological algebra is a vital tool in commutative algebra. Unfortunately, in Dylan's time at KU, there has not been a course offered en masse on the subject, so interested students have had to self-study. This is difficult because the literature contains many technical details that can be tough for students to digest without any guidance. Dylan's intention with this series of talks is to construct objects like Hom, Ext, the tensor product, and Tor and examine their properties in a manner that focuses on inquiry-based learning in a specific setting. This isn't to say that he intends to leave out any details; his aim is simply to be more concrete and intentional with the exposition.
+<br>
+<br>
+During the first non-organizational seminar meeting of the seminar, we defined \(\operatorname{Hom}_R(M, N)\) to be the collection of \(R\)-module homomorphisms between two \(R\)-modules \(M\) and \(N\). We showed that \(\operatorname{Hom}_R(M, N)\) is itself an \(R\)-module, and if we allow the first (or second component) of \(\operatorname{Hom}_R(M, N)\) to vary, we obtain a contravariant (or covariant) functor from the category of \(R\)-modules to itself. It turns out that these functors are both left-exact; however, they are not right-exact in general.
+&nbsp;
+<p>10 February:</p>
+
+We say that an \(R\)-module \(P\) is <b>projective</b> if \(\operatorname{Hom}_R(P, -)\) is right-exact; likewise, an \(R\)-module \(Q\) is <b>injective</b> if \(\operatorname{Hom}_R(-, Q)\) is right-exact. We showed that the \(\mathbb Z\)-module \(\mathbb Z / n \mathbb Z\) is neither projective nor injective. We explored equivalent conditions for which a module is projective or injective, and we showed that every free module is projective. Consequently, every \(R\)-module admits a free resolution (and so a projective resolution). We ended the seminar by defining the \(R\)-modules \(\operatorname{Ext}_R^i(M, N)\) in terms of projective resolutions.
+&nbsp;
+<p>17 February:</p>
+
+We did not meet due to weather-related cancellations; however, Dylan posted the notes to the website on Wednesday night so that everyone could look over them.
+<br>
+<br>
+Recall that \(\operatorname{Hom}(-, Q)\) is right-exact if and only if \(Q\) is injective. Our aim is to determine the injective "defect" of an arbitrary \(R\)-module. We showed that every \(R\)-module admits a free resolution, and every free module is projective. For any \(R\)-module \(M\), we may therefore take a projective resolution \(P_\bullet\) of \(M\) and apply the contravariant functor \(\operatorname{Hom}(-, N)\) to obtain a chain complex \(\operatorname{Hom}(P_\bullet, N)\). We defined its \(i\)th cohomology module as \(\operatorname{Ext}_R^i(M, N)\); Cartan and Eilenberg showed that this is independent of the projective resolution of \(M\).
+<br>
+<br>
+Proposition 1.9 of the notes discusses properties of \(\operatorname{Ext}_R^i(M, N)\). Particularly, it shows that the contravariant functors \(\operatorname{Ext}_R^i(-, N)\) measure the injective "defect" of \(N\). We would also like to define the projective "defect" of a module \(M\). One might naturally expect to do that by taking an injective resolution of \(N\) and applying \(\operatorname{Hom}(M, -)\). Unfortunately, it is not clear that an injective resolution of \(N\) exists, so we must first show that it does. To do this, we investigate a functorial operation that is "adjoint" to Hom: this is the tensor product.
+<br>
+<br>
+A construction of the tensor product is given in the notes in two different ways: the first depicts the tensor product as the quotient of a free module; its elements are called the "pure tensors" of \(M\) and \(N\). On the other hand, the tensor product is also the unique object satisfying a certain universal property. Both definitions have their merits, and often, it is best to use them in tandem. So, the rest of the notes for this week investigate the properties of the tensor product that we will exploit to construct an injective resolution for any \(R\)-module.
+&nbsp;
+<p>24 February:</p>
+
+We proceeded this morning with our discussion of the tensor product. Crucially, we noted that the tensor product \(M \otimes_R -\) with a fixed \(R\)-module \(M\) is a covariant functor from the category of \(R\)-modules to itself; this hinges on the fact that the tensor product \(\varphi \otimes_R \psi\) of \(R\)-module homomorphisms is a well-defined \(R\)-module homomorphism of tensor products (cf. Proposition 2.3). From here, we determined that the tensor product functor is right-exact; it is left-exact if and only if the induced map \(\operatorname{id}_M \otimes_R -\) on the tensor product is injective.
+<br>
+<br>
+We call an \(R\)-module \(L\) <b>flat</b> if the tensor product \(L \otimes_R -\) with \(L\) is left-exact. We concluded today's session by noting that \(R\) is a flat \(R\)-module, and a direct sum of flat modules is flat if and only if each direct summand is flat. Consequently, any free module is flat, so any projective module is flat, as projective modules are direct summands of free modules. Last, we showed that a finitely generated flat module over a local ring is free by the Rank-Nullity Theorem.
+<br>
+<br>
+We will begin next week to discuss the "flat" defect of an \(R\)-module; this is measured by the Tor functor (to be defined next time). Bear in mind that all of this is useful on its own, but our ultimate objective is to prove that any \(R\)-module embeds into an injective \(R\)-module. From there, it follows that injective resolutions of \(R\)-modules exist.
+&nbsp;
+<p>3 March:</p>
+
+One of our primary motivations this meeting was to rigorously define the notion of the "flat" defect of an \(R\)-module. Recall that a direct sum of \(R\)-modules is flat if and only if each direct summand is flat. Even more, \(R\) is itself a flat \(R\)-module. Consequently, free \(R\)-modules are flat, and projective \(R\)-modules are flat because they are direct summands of free \(R\)-modules. Consequently, every \(R\)-module has a <b>flat</b> resolution: indeed, any free resolution yields a flat resolution. Let \(N\) be an arbitrary \(R\)-module. Consider a flat resolution of \(N\) \(L_\bullet : \cdots \xrightarrow{\ell_{n + 1}} L_n \xrightarrow{\ell_n} \cdots \xrightarrow{\ell_2} L_1 \xrightarrow{\ell_1} L_0 \xrightarrow{\ell_0} N \to 0\). We obtain an induced chain complex \(M \otimes_R L_\bullet : \cdots \xrightarrow{\ell_{n + 1}^*} M \otimes_R L_n \xrightarrow{\ell_n^*} \cdots \xrightarrow{\ell_2^*} M \otimes_R L_1 \xrightarrow{\ell_1^*} M \otimes_R L_0 \to 0\) with chain maps defined by \(\ell_i^* = \operatorname{id}_M \otimes_R \ell_i\) for each integer \(i \geq 0.\) Let \(\operatorname{Tor}_i^R(M, N) = \ker \ell_i^* / \operatorname{img} \ell_{i + 1}^*\) be the \(i\)th homology module of \(M \otimes_R L_\bullet\) for each integer \(i \geq 0.\) Crucially, Tor does not depend on the projective resolution \(L_\bullet\). We showed that \(\operatorname{Tor}_i^R(M, N) = 0\) for all integers \(i \geq 1\) and all \(R\)-modules \(N\) if and only if \(M\) is flat, so in this sense, Tor measures the "flat" defect of \(M.\)
+<br>
+<br>
+Our other goal during this seminar was to establish a fundamental connection between Hom and the tensor product. Explicitly, we illustrated the tensor-hom adjunction: for any commutative ring \(R\) and any \(R\)-modules \(A,\) \(B,\) and \(C,\) there exists an \(R\)-module isomorphism \(\alpha : \operatorname{Hom}_R(A \otimes_R B, C) \to \operatorname{Hom}_R(A, \operatorname{Hom}_R(B, C))\) that sends any \(R\)-module homomorphism \(\varphi : A \otimes_R B \to C\) to the \(R\)-module homomorphism \(\psi_{\varphi, a} : B \to C\) defined by \(\psi_{\varphi, a}(b) = \varphi(a \otimes_R b)\) determined by the element \(a \in A.\) Because the pure tensors of \(A \otimes_R B\) generate \(A \otimes_R B\) as an \(R\)-module, the map \(\alpha\) is well-defined. We proceeded to demonstrate that it is injective; it is surjective by the Universal Property of the Tensor Product.
+<br>
+<br>
+We will see next time that any \(R\)-module embeds into an injective \(R\)-module. Essentially, the proof follows by first obtaining a "universal" injective object in the category of abelian groups and subsequently applying the tensor-hom adjuction to obtain an injective abelian group for any \(R\)-module and then an injective \(R\)-module from that.
+&nbsp;
+<p>10 March:</p>
+
+We did not meet due to weather-related cancellations; however, Dylan posted the notes to the website on Thursday morning so that everyone could look over them.
+<br>
+<br>
+Last meeting, we finished acquiring all of the necessary prerequisite materials to demonstrate that every \(R\)-module embeds into an injective \(R\)-module. We begin the last section of notes in this series with a fundamental fact about injective modules known as <b>Baer's Criterion</b>. Crucially, this result says that the injective property of an \(R\)-module \(Q\) can be detected by the existence of a "lifting" from <i>any</i> \(R\)-module homomorphism \(\varphi : I \to Q\) from an ideal of \(R\) to an \(R\)-module homomorphism \(\widetilde \varphi : R \to Q\). (One direction is already known to us: if \(Q\) is injective, then every \(R\)-module homomorphism \(\varphi : I \to Q\) from an ideal \(I\) of \(R\) to \(Q\) "lifts" to an \(R\)-module homomorphism \(\widetilde \varphi : R \to Q\) via the inclusion map \(I \subseteq R\); it is the other direction that is interesting.) Consequently, the \(\mathbb Z\)-module \(\mathbb Q / \mathbb Z\) is an injective \(\mathbb Z\)-module.
+<br>
+<br>
+We define the <b>character group</b> of any \(R\)-module \(M\) as the abelian group \(M^* = \operatorname{Hom}_{\mathbb Z}(M, \mathbb Q / \mathbb \Z)\). Every \(R\)-module embeds into the character group of its character group via the evaluation map \(\operatorname{ev} : M \to M^{**}\) defined by \(\operatorname{ev}(m)(\varphi) = \varphi(m)\). Consequently, every \(R\)-module embeds into a direct product of copies of the injective \(\mathbb Z\)-module \(\mathbb Q / \mathbb Z\), hence every \(R\)-module embeds into an injective \(\mathbb Z\)-module. Our immediate aim is to use this embedding to produce an embedding of \(R\)-modules. By the Tensor-Hom Adjunction, if \(P\) is a projective \(R\)-module and \(Q\) is an injective \(\mathbb Z\)-module, then \(\operatorname{Hom}_{\mathbb Z}(P, Q)\) is an injective \(R\)-module. Consequently, the embedding \(\varphi : M \to Q\) of \(M\) into an injective \(mathbb Z\)-module \(Q\) induces an embedding \(\operatorname{Hom}_{\mathbb Z}(R, \varphi) : \operatorname{Hom}_{\mathbb Z}(R, M) \to \operatorname{Hom}_{\mathbb Z}(R, Q)\), the latter of which is an injective \(R\)-module. Last, we establish that the multiplication map \(\mu : M \to \operatorname{Hom}_{\mathbb Z}(R, M)\) defined by \(\mu(m)(r) = rm\) is an injective \(\mathbb Z\)-module homomorphism and \(\operatorname{Hom}_{\mathbb Z}(R, \varphi) \circ \mu : M \to \operatorname{Hom}_{\mathbb Z}(R, M)\) is an injective \(R\)-module homomorphism.
+&nbsp;
+<p>24 March:</p>
+
+We assume throughout the talk that \((R, \mathfrak m, k)\) is a Noetherian local ring with unique maximal ideal \(\mathfrak m\) and residue field \(k = R / \mathfrak m\). We assume that all \(R\)-modules are finitely generated. Last semester, we defined the <b>(Krull) dimension</b> \(\operatorname{dim}(M) = \operatorname{dim}(R / \!\operatorname{ann}_R(M))\) of an \(R\)-module \(M\), where the latter is the (Krull) dimension of the quotient ring. We also showed that \(\operatorname{depth}_R(M) = \inf \{i \geq 0 \mid \operatorname{Ext}_R^i(k, M) \neq 0\}\) is a well-defined invariant of \(M\) that measures the length of a maximal \(M\)-regular sequence in \(\mathfrak m\). Ultimately, we proved that \(\operatorname{depth}(M) \leq \operatorname{dim}(M) \leq \operatorname{dim}(R)\). Equality holds in the first inequality if and only if \(M\) is <b>Cohen-Macaulay</b>; if the stronger equality holds that \(\operatorname{depth}(M) = \operatorname{dim}(R)\), then \(M\) is <b>maximal Cohen-Macaulay</b>. Every Cohen-Macaulay local ring is a maximal Cohen-Macaulay module over itself.
+<br>
+<br>
+Every module over a commutative unital ring admits an injective resolution \(Q^\bullet\) because every module over a commutative unital ring embeds into an injective module. Consequently, we may define \(\operatorname{injdim}_R(M) = \inf \{n \mid Q^\bullet : 0 \to M \to Q^0 \to Q^1 \to \cdots \to Q^n \to 0 \text{ is an injective resolution of } M\}\). By a theorem of Ischebeck, we note that the maximal Cohen-Macaulay modules and the finitely generated modules of finite injective dimension over a Cohen-Macaulay local ring are "orthogonal" with respect to Ext. Bass's Conjecture of 1963 and its converse establish that a Noetherian local ring admits a finitely generated module of finite injective dimension if and only if it is Cohen-Macaulay, so the category of Cohen-Macaulay local rings is the correct setting in which to study maximal Cohen-Macaulay modules and finitely generated modules of finite injective dimension.
+<br>
+<br>
+We say that a finitely generated module \(\omega\) over a Cohen-Macaulay local ring \((R, \mathfrak m, k)\) is a <b>canonical module</b> for \(R\) if (1.) \(\omega\) is maximal Cohen-Macaulay, i.e., \(\operatorname{depth}(\omega) = \operatorname{dim}(R)\); (2.) \(\omega\) has finite injective dimension as an \(R\)-module, in which case we have that \(\operatorname{injdim}_R(\omega) = \operatorname{depth}(R)\); and (3.) the <b>Cohen-Macaulay type</b> of \(\omega\) is one, i.e., we have that \(r(\omega) = \dim_k \operatorname{Ext}_R^{\operatorname{depth}(\omega)}(k, \omega) = 1\). We prove that canonical modules are unique up to isomorphism and that they provide a depth-preserving duality on finitely generated Cohen-Macaulay modules. We note also that canonical modules behave well with respect to quotients by regular sequences, localization at prime ideals, and \(\mathfrak m\)-adic completion.
+&nbsp;
+<p><i>Last updated at 11:30 AM on Thursday, 24 March 2022.</i></body></html>
