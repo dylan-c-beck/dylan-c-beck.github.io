@@ -1,0 +1,9 @@
+body { color:red; }
+
+p { color:blue; }
+
+a { color:blue; text-decoration:none; }
+
+a:hover { color:red; text-decoration:none; font-weight:bold; }
+
+table, th, td { border:1px solid black; }

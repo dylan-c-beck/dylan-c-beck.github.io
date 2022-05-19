@@ -1,9 +1,9 @@
-body { color:red; }
+body { color:orange; }
 
-p { color:blue; }
+p { color:navy; }
 
-a { color:blue; text-decoration:none; }
+a { color:navy; text-decoration:none; }
 
-a:hover { color:red; text-decoration:none; font-weight:bold; }
+a:hover { color:orange; text-decoration:none; font-weight:bold; }
 
 table, th, td { border:1px solid black; }
