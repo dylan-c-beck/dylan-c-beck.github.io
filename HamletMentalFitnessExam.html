@@ -1,0 +1,38 @@
+<html>
+<h2>Hamlet's Mental Fitness Exam</h2>
+<head>
+  <script type="text/javascript">
+    function mentalFitness() {
+          var windDirection = document.getElementById("windDirectionQuestionId").value;
+          switch (windDirection) {
+                  case "north-northwest":
+                        text = "Mad!!";
+                        break;
+                  case "southerly":
+                        text = "You can tell a hawk from a handsaw.";
+                        break;
+                  case "north":
+                        text = "Man delights not me. Ask again when the wind changes.";
+                        break;
+                  case "south":
+                        text = "When the wind is southerly, you can tell a hawk from a handsaw.";
+                        break;
+                  case "east":
+                        text = "Get thee to a nunnery! Ask again when the wind changes.";
+                        break;
+                  case "west":
+                        text = "The readiness is all. Ask again when the wind changes.";
+                        break;
+                  default:
+ 		                     text = "Though you may fret me, you cannot play upon me. Try another wind direction.";
+            }
+    alert('text');
+    }
+  </script>
+</head>
+<form>
+  <label for="windDirectionQuestion">What is the wind direction?</label><br>
+  <input type="text" name="windDirectionFieldName" id="windDirectionQuestionId">
+  <button onclick="mentalFitness()">Submit</button>
+</form>
+</html>
