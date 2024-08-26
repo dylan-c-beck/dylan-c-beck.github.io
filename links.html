@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Cool Links | Dylan C. Beck | Baker University</title>
+<title>Cool Links | Dylan C. Beck | University of Saint Mary</title>
 <link rel="stylesheet" href="mystyle.css">
 </head>
 <div class="header">
@@ -54,6 +54,10 @@
 <p><a href="https://pitchfork.com">Pitchfork is an entertaining magazine.</a></p>
 <p><a href="HamletMentalFitnessExam.html">Click here to take Hamlet's Mental Fitness Exam (designed by Brittany Beck Kingery).</a></p>
 &nbsp;
-<p><i>Last updated at 1:40 PM on Thursday, 21 December 2023.</i></p>
+<p><i>Last updated on <a id="time"></a>.</i>
+<script>
+const date = new Date(document.lastModified);
+document.getElementById("time").innerHTML = date;
+</script>
 </body>
 </html>
